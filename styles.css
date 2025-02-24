@@ -1,0 +1,14 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar spacing */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Simple card styling */
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

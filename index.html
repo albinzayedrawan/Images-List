@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Basic Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Simple Page</a>
+    </nav>
+
+    <!-- Content Area for Cards -->
+    <div class="container mt-3" id="items-container">
+        <!-- Handlebars template for cards -->
+        <script id="item-template" type="text/x-handlebars-template">
+            {{#each items}}
+            <div class="card mb-3" style="width: 16rem;">
+                <img src="{{image}}" class="card-img-top" alt="Item image">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">{{description}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </script>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
